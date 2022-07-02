@@ -1,0 +1,13 @@
+### Submit Suppliers
+GET http://localhost:4004/catalog/Suppliers?$top=2
+### Brows Products 
+GET http://localhost:4004/catalog/Products?$top=2
+### Brows products product identifiers Product, Product Identifier, price
+GET http://localhost:4004/catalog/Products?&$select = identifier,price
+
+###Submit Products
+Post http://localhost:4004/catalog/Products?
+Content-Type: application/json
+
+{"ID":"cef96f87-102c-425d-bc23-c90c1d835186"
+}
